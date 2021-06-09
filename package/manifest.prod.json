@@ -1,0 +1,31 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "id": "92337fcc-ce68-4cdd-99f8-190191d3ae46",
+    "version": "1.5",
+     "developer": {
+        "name": "Example company",
+        "websiteUrl": "http://www.example.com",
+        "privacyUrl": "http://www.example.com/privacy",
+        "termsOfUseUrl": "http://www.example.com/termsofuse"
+    },
+    "tabs": [{
+        "id": "92337fcc-ce68-4cdd-99f8-190191d3ae46",
+        "name": "ToDo",
+        "description": {
+            "short": "Create and manage your Outlook tasks.",
+            "full": "Create and manage your Outlook tasks.  Sign in using your Office 365 work/school account, and click Save."
+        },
+        "icons": {
+            "44": "todo44.png",
+            "88": "todo88.png"
+        },
+        "accentColor": "#004578",
+        "configUrl": "https://teams-todo-sample.azurewebsites.net/config.html",
+        "canUpdateConfig": true
+    }],
+    "needsIdentity": true,
+    "validDomains": [
+        "*.login.microsoftonline.com"
+    ]
+}
