@@ -229,7 +229,7 @@ declare namespace __React {
     // Component Specs and Lifecycle
     // ----------------------------------------------------------------------
 
-    interface ComponentLifecycle<P, S> {
+    /*interface ComponentLifecycle<P, S> {
         componentWillMount?(): void;
         componentDidMount?(): void;
         componentWillReceiveProps?(nextProps: P, nextContext: any): void;
@@ -237,9 +237,9 @@ declare namespace __React {
         componentWillUpdate?(nextProps: P, nextState: S, nextContext: any): void;
         componentDidUpdate?(prevProps: P, prevState: S, prevContext: any): void;
         componentWillUnmount?(): void;
-    }
+    }*/
 
-    interface Mixin<P, S> extends ComponentLifecycle<P, S> {
+    interface Mixin<P, S> /*extends ComponentLifecycle<P, S>*/ {
         mixins?: Mixin<P, S>;
         statics?: {
             [key: string]: any;
