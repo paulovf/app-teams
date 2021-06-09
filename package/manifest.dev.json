@@ -21,7 +21,7 @@
             "88": "todo88.png"
         },
         "accentColor": "#004578",
-        "configUrl": "https://localhost:3000/config.html",
+        "configUrl": "https://app-teams.herokuapp.com/config.html",
         "canUpdateConfig": true
     }],
     "needsIdentity": true,

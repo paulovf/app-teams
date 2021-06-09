@@ -19,6 +19,7 @@ module.exports = webpackMerge(commonConfig(), {
             aggregateTimeout: 300,
             poll: 1000
         },
-        outputPath: path.resolve('dist')
+        outputPath: path.resolve('dist'),
+        port: 443
     }
 });
