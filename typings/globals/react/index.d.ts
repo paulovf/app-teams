@@ -225,6 +225,10 @@ declare namespace __React {
         (new() => T) &
         (new() => { props: P });
 
+    //
+    // Component Specs and Lifecycle
+    // ----------------------------------------------------------------------
+
     interface Mixin<P, S> {
         mixins?: Mixin<P, S>;
         statics?: {

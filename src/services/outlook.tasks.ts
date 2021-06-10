@@ -80,15 +80,8 @@ export class OutlookTasks implements ITodoService {
          * the OfficeHelpers library.
          */
         try {
-            //this._token = await this.authenticator.authenticate('Microsoft', false, true /* Use Microsoft Teams Dialog */);
-            //return this._token;
-            return this.authenticator.authenticate('Microsoft')
-                .then(token => this._token = token)
-                .catch(error => {
-                    Utilities.log(error);
-                    throw new Error('Failed to login using your Microsoft Account');
-                }
-            );
+            this._token = await this.authenticator.authenticate('Microsoft', false, true /* Use Microsoft Teams Dialog */);
+            return this._token;
         }
         catch (error) {
             Utilities.log(error);
