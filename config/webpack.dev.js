@@ -13,6 +13,8 @@ module.exports = webpackMerge(commonConfig(), {
 
     devServer: {
         https: true,
+        host: "app-teams.herokuapp.com",
+        port: 8080,
         historyApiFallback: true,
         stats: 'minimal',
         watchOptions: {
