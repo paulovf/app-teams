@@ -1,6 +1,9 @@
 {
   "name": "microsoft-teams-sample-todo",
   "version": "1.0.1",
+  "engines": {
+    "node": "2.x"
+  },
   "author": {
     "name": "Microsoft"
   },
