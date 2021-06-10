@@ -14,7 +14,7 @@
   "homepage": "https://github.com/OfficeDev/microsoft-teams-sample-todo#readme",
   "private": true,
   "scripts": {
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --colors --display-modules --progress",
+    "build": "rimraf dist && webpack --port $PORT --host 0.0.0.0 --mode production --config config/webpack.prod.js --colors --display-modules --progress",
     "start": "webpack-dev-server --port $PORT --host 0.0.0.0  --config config/webpack.dev.js --colors --display-modules --progress",
     "deploy": "node config/deploy.js"
   },
