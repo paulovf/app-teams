@@ -2,7 +2,7 @@
   "name": "microsoft-teams-sample-todo",
   "version": "1.0.1",
   "engines": {
-    "node": "4.2.0"
+    "node": "4.7.0"
   },
   "author": {
     "name": "Microsoft"
