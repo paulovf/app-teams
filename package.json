@@ -15,7 +15,7 @@
   "private": true,
   "scripts": {
     "build": "rimraf dist && webpack --config config/webpack.prod.js --colors --display-modules --progress",
-    "start": "webpack-dev-server --port 3000 --config config/webpack.dev.js --colors --display-modules --progress",
+    "start": "webpack-dev-server --port 80 --config config/webpack.dev.js --colors --display-modules --progress",
     "deploy": "node config/deploy.js"
   },
   "dependencies": {
