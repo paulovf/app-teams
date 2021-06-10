@@ -155,6 +155,7 @@ declare namespace __React {
 
     type ReactInstance = Component<any, any> | Element;
 
+    
     // Base component for plain JS classes
     class Component<P, S> {
         constructor(props?: P, context?: any);
