@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --colors",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --colors --display-modules --progress",
-    "start": "webpack-dev-server --config config/webpack.dev.js --colors --display-modules --progress --open --inline --mode production",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 80 --config config/webpack.dev.js --colors --display-modules --progress --open --inline --mode production",
     "deploy": "node config/deploy.js"
   },
   "dependencies": {
